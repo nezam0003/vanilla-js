@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.container {
+    width: 90vw;
+    max-width: 1170px;
+    background: #111;
+    color: #fff;
+    padding: 2rem;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+h1,
+h2 {
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.todo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3rem;
+}
+
+.todo h2 {
+    border-bottom: 1px solid #222;
+    padding-bottom: 5px;
+}
+
+.box {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    margin: 1.5rem 0;
+    background: #333;
+    text-align: center;
+}
+
+.item {
+    /* display: flex;
+    justify-content: space-around;
+    align-items: center; */
+    text-align: center;
+}
+
+ul li {
+    margin: 1rem 0;
+}
+
+.todo button {
+    margin: 0 0 0 2rem;
+}
+
+.todo-list button {
+    outline: none;
+    border: 1px solid #fff;
+    padding: 0.2rem 0.5rem;
+    background: green;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.todo-list button:hover,
+.complete-list button:hover {
+    background: #111;
+}
+
+.complete-list button {
+    outline: none;
+    border: 1px solid #fff;
+    padding: 0.2rem 0.5rem;
+    background: rgb(236, 17, 17);
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+#add-Task {
+    outline: 0;
+    padding: 0.2rem 1rem;
+    text-transform: capitalize;
+    font-size: 1rem;
+    background: #111;
+    border: 1px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+#new-task {
+    outline: 0;
+    padding: 0.2rem 1rem;
+    font-size: 1rem;
+}
+
+#add-Task:hover {
+    background: green;
+}
+
+form label {
+    font-size: 1rem;
+}

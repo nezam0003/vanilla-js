@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play with DOM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>TO-DO App</h1>
+        <form class="new-task-container box">
+            <label for="new-task">Add New Task</label>
+            <input type="text" id="new-task">
+            <button id="add-Task">Add Task</button>
+        </form>
+        <div class="todo">
+            <div class="todo-list box">
+                <h2>Incomplete Tasks</h2>
+                <ul id="items">
+                    <li class="item">
+                        <input type="checkbox">
+                        <label>Task Name</label>
+                        <button class="update">Update</button>
+                    </li>
+                    <li class="item">
+                        <input type="checkbox">
+                        <label>Task Name</label>
+                        <button class="update">Update</button>
+                    </li>
+                    <li class="item">
+                        <input type="checkbox">
+                        <label>Task Name</label>
+                        <button class="update">Update</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="complete-list box">
+                <h2>Completed Tasks</h2>
+                <ul>
+                    <li class="item">
+                        <label>Task Name</label>
+                        <button class="delete">Delete</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
