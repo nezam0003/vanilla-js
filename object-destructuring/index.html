@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Destructuring</title>
+</head>
+
+<body>
+    <script>
+        // const student = {
+        //         name: "Nezam",
+        //         age: 27,
+        //         gender: "male"
+        //     }
+        // const {
+        //     name,
+        //     age,
+        //     gender
+        // } = student;
+        // console.log(name);
+        // console.log(age);
+        // console.log(gender);
+
+        // Object passing to a function
+        // function displayInfo({
+        //     name: sName,
+        //     age: sAge,
+        //     gender: sGender
+        // }) {
+        //     console.log(sName);
+        //     console.log(sAge);
+        //     console.log(sGender);
+        // }
+        // displayInfo(student);
+
+        // Object returning from a function
+        // function displayInfo(obj) {
+        //     return obj;
+        // }
+        // const {
+        //     name,
+        //     age,
+        //     gender
+        // } = displayInfo(student);
+        // console.log(name);
+
+        // Nested object
+        const bioData = {
+            gender: "male",
+            age: 27,
+            student: {
+                std1: "A",
+                std2: "C",
+                std3: "B"
+            }
+        };
+        const {
+            gender,
+            age,
+            student: {
+                std1,
+                std3
+            }
+        } = bioData;
+        console.log(std3);
+    </script>
+</body>
+
+</html>
