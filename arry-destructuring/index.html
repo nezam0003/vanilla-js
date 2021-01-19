@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Destructuring</title>
+</head>
+
+<body>
+    <script>
+        // const student = ['nezam', 27, 'male', 10, 20, 30];
+        // const [name, age, gender] = student;
+        // console.log(name);
+        // console.log(age);
+        // console.log(gender);
+
+        // passing array to a function
+        // function displayInfo([name, age, gender, ...rest]) {
+        //     console.log(name);
+        //     console.log(age);
+        //     console.log(gender);
+        //     console.log(rest);
+        // }
+        // displayInfo(student);
+
+        // return arry from a function
+        // function returnInfo(arr) {
+        //     return arr;
+        // }
+        // const [name, age, gender] = returnInfo(student);
+        // console.log(name);
+        // console.log(age);
+        // console.log(gender);
+
+        // Nested arry destructuring
+        const student = ['nezam', 27, 'male', [10, 20, 30]];
+        const [name, age, gender, [val1, val2, val3]] = student;
+        console.log(val1, val2, val3);
+    </script>
+</body>
+
+</html>
